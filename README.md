@@ -14,8 +14,9 @@ The purpose of this project is to analyze the data of Unicorn Startups and deter
 4.	What industries have the highest valuation of Unicorns?
 5.	Did certain industries do better in certain cities?
 
+## Report
 
-Writeup for this project can be found here(https://nicholaslukas.com/startup-success)
+Writeup for this project can be found [here](https://nicholaslukas.com/startup-success)
 
-Complete process of developing this project including code, visualizations, and process explanations can be found here(Process Creation.md)
+Complete process of developing this project including code, visualizations, and process explanations can be found [here](Process Creation.md)
  
