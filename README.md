@@ -4,7 +4,7 @@
 
 ## Purpose
 
-The purpose of this project is to analyze the data of Unicorn Startups and determine patterns of startups that were able to become unicorns
+The purpose of this project is to analyze the data of Unicorn Startups and determine patterns of those startups
 
 ## Questions Answered
 
