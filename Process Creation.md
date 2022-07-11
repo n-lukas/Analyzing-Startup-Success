@@ -97,9 +97,8 @@ A matrix was used to show the full picture of success by city and industry. The 
 ### Relationships
 ![Tooltips](/Visualizations/Tooltip.png)
 Highlighting a city or industry on the dashboard or Industry by City page will show a pop out of their respected report (Cities or Industries) with data portaining only to the highlighted selection <br />
-![Interactions](/Visualizations/Interactions.png)
-You can click on any of the data points and it will automatically filter the rest of the data on that tab by that point <br />
-![Drill](/Visualizations/Drill Down.png)
+You can also click on any of the data points and it will automatically filter the rest of the data on that tab by that point <br />
+![Drill](/Visualizations/Drill.png)
 You can drill down to company level and see which values make up the key metric <br />
 ![Interactions](/Visualizations/Slicer.png)
 You can filter by city on the Industries tab to have an additional set of visuals for key metrics by both industry and city. 

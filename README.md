@@ -1,6 +1,6 @@
 # Analyzing Startup Success
 
-![image](/Visualizations/Dashboard.png)
+![image](/Visualizations/Dashboard.png)(https://nicholaslukas.com/Startup-Analysis)
 
 ## Purpose
 
