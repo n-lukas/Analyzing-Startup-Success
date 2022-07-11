@@ -40,7 +40,7 @@ Turning Data into Table: <br />
 `data = {'Company': Companies, 'Valuation': Valuations, 'Date': Dates, 'Country': Countries, 'City': Cities, 'Industry': Industries}` <br />
 `Startups = pd.DataFrame(data)` <br />
 
-![Query](Process Screenshots/Querying Data using Python and Power BI.PNG)
+![Query](Process%Screenshots/Querying%Data%using%Python%and%Power%BI.png)
 
 ## Transforming Data
 
@@ -49,7 +49,7 @@ Based on US Census Data Metro/Micro Statistical Area 2021
 
 Created realtionships in data model using `City` in the `Startups` table as the primary key and `City` in the `Major Cities Lookup` table as the foreign key.
 
-![Transform](Process Screenshots/Data Model.PNG)
+![Transform](Process%Screenshots/Data%Model.png)
 
 Added the following DAX formulas to create a new column in the primary table <br />
 `Major City Location = RELATED('Major Cities Lookup'[Major City]) & ", " & RELATED('Major Cities Lookup'[State]) & ", " & 'Startups'[Country]` <br />
