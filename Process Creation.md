@@ -63,7 +63,7 @@ This gives us an average startup value per city and an average startup value per
 ## Visualizing Data
 
 ### Dashboard
-![Dashboard](Visualizations/Dashboard.PNG)
+![Dashboard](/Visualizations/Dashboard.png)
 The dashboard shows the high level overview of the data. On the top you have Valuation, Average Startup Value and number of startups.
 The column the very left shows industries while the column to the very right shows cities and states. You can click on any of these items and the key metrics will change in regard to what is selected.
 The center buttons act as a central way to quickly find the details of the data you are looking for.
@@ -73,7 +73,7 @@ Two DAX formulas were used to create calcualted measures used only on the dashbo
 `Total Startup Valuation = CALCULATE(SUM('Startups'[Valuation]) * 1000000000)` <br />
 
 ### By City
-![Cities](Visualizations/Cities.PNG)
+![Cities](/Visualizations/Cities.png)
 #### Map
 A map was used here due to data being location based. Sicne we are dealing with major cities, you are able to quickly see which cities have the highest valuation, # of startups, and succcess. 
 The displayed metric can be changed between valuation, number of startups, and value/startup using the buttons provided. 
@@ -81,25 +81,25 @@ The displayed metric can be changed between valuation, number of startups, and v
 A table was used to summarize the data in an easy to read numerical format. Using the buttons will sort the data by the selected value in descending order
 
 ### By Industry
-![Industries](Visualizations/Industries.PNG)
+![Industries](/Visualizations/Industries.png)
 #### Tree Map
 A tree map was used to show the proportion of industries that make up the key metrics. Similar to the City tab, buttons can be used here to change which metric is being displayed.
 #### Table
 Similarly to the City tab, a table is used here to display easy to read numericals. 
 
 ### By both City and Industry
-![Industries](Visualizations/Industry by City.PNG)
+![Industries](/Visualizations/Industry by City.png)
 #### Clustered Bar Chart
 Due to the large amount of data, a clustered bar chart was used. You can quickly find which industries are the most prevelant in which cities by looking at the size of the bar. Values are also displayed on the bottom.
 #### Matrix
 A matrix was used to show the full picture of success by city and industry. The intersections show the value/startup for each city and industry. Totals are used to show the total startup/value by city and industry as well. Any blank data means that the industry is not present in that city.
 
 ### Relationships
-![Tooltips](Visualizations/Tooltip.PNG)
+![Tooltips](/Visualizations/Tooltip.png)
 Highlighting a city or industry on the dashboard or Industry by City page will show a pop out of their respected report (Cities or Industries) with data portaining only to the highlighted selection <br />
-![Interactions](Visualizations/Interactions.PNG)
+![Interactions](/Visualizations/Interactions.png)
 You can click on any of the data points and it will automatically filter the rest of the data on that tab by that point <br />
-![Drill](Visualizations/Drill Down.PNG)
+![Drill](/Visualizations/Drill Down.png)
 You can drill down to company level and see which values make up the key metric <br />
-![Interactions](Visualizations/Slicer.PNG)
+![Interactions](/Visualizations/Slicer.png)
 You can filter by city on the Industries tab to have an additional set of visuals for key metrics by both industry and city. 
