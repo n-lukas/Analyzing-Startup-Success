@@ -20,7 +20,7 @@ This report will be based on transformed data where cities are replaced with the
 ## Defining Major City
 The nearest major city is defined by the nearest metro/micropolitan area based on the US 2021 Census data.
 ## What cities are the most successful and produced the highest number of Unicorns?
-As expected, San Francisco has the highest number of startups followed by New York and San Jose. San Francisco has ~2x the startups but ~4x the value of New York. This means the average San Francisco startup is much higher in value than the average New York. Another interesting point is that Los Angeles has a little under half as many startups as San Jose but provides an overall higher valuation. The average startup value of Los Angeles is $6.09B which beats the average startup value of both New York ($2.32B) and San Francisco ($4.05B). Both San Francisco and New York sit lower than expected on the list. San Francisco comes in 8th with an average startup value of $4.05B and Yew York comes in 27th with an average startup value of $2.32B. This disproves my initial hypothesis of New York and San Francisco being the most successful cities for startups.
+As expected, San Francisco has the highest number of startups followed by New York and San Jose. San Francisco has ~2x the startups but ~4x the value of New York. This means the average San Francisco startup is much higher in value than the average New York. Another interesting point is that Los Angeles has a little under half as many startups as San Jose but provides an overall higher valuation. The average startup value of Los Angeles is $6.09B which beats the average startup value of both New York ($2.32B) and San Francisco ($4.05B). Both San Francisco and New York sit lower than expected on the list. San Francisco comes in 8th with an average startup value of $4.05B and Yew York comes in 27th with an average startup value of $2.32B. This disproves my initial hypothesis of New York and San Francisco being the most successful cities for startups. <br />
 <img src="/Visualizations/Report/NYvsCANumber.png" width=50% height=50%> <img src="/Visualizations/Report/LocationSuccess.png" width=50% height=50%> <br />
 
 ## What industries are the most successful and produced the highest number of Unicorns?
@@ -28,7 +28,7 @@ Internet Software & Services and Fintech accounted for the largest amount of uni
 
 Surprisingly, Supply Chain, logistics & delivery have an average startup value of $4.24B making it the third-highest value/startup industry. There are 23 startups in this industry to reinforce this data. Fintech sits fourth with a value/startup of $3.79B. Another surprising discovery is that internet software & service only has an average value/startup of $2.94B making it sit in the middle of the list of industries.
 
-My initial hypothesis was that tech-related industries would be the highest value/startup industry. However, based on this report that hypothesis is disproved as many other industries sit higher than tech-related industries.
+My initial hypothesis was that tech-related industries would be the highest value/startup industry. However, based on this report that hypothesis is disproved as many other industries sit higher than tech-related industries. <br />
 <img src="/Visualizations/Report/IndustryNumber.png" width=50% height=50%> <img src="/Visualizations/Report/IndustrySuccess.png" width=50% height=50%> <br />
 
 ## Did certain industries do better in certain cities?
