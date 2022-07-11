@@ -1,6 +1,6 @@
 # Analyzing Startup Success
 
-[![image](/Visualizations/Dashboard.png)](https://nicholaslukas.com/Startup-Analysis)
+[![image](/Visualizations/Dashboard.png)](https://app.powerbi.com/view?r=eyJrIjoiOTQzMGZlNmItZDk2Ny00N2MzLTkxN2EtODk3MzhmMDAwNWExIiwidCI6IjE0MmQ2ZmUxLWQyYmYtNDJmMy1iNDA4LWUzOGI1Njg4NzQyYiIsImMiOjF9)
 
 ## Purpose
 
