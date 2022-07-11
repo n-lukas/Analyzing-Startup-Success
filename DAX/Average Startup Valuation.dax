@@ -1,0 +1,1 @@
+Average Startup Valuation = (CALCULATE(DIVIDE(SUM('Startups'[Valuation]), COUNTA('Startups'[Company])))) * 1000000000

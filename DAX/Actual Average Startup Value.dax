@@ -1,1 +1,0 @@
-Actual Average Startup Value = (CALCULATE(DIVIDE(SUM('Startups'[Valuation]), COUNTA('Startups'[Company])))) * 1000000000
