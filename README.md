@@ -1,6 +1,6 @@
 # Analyzing Startup Success
 
-![Main](Visualizations/Dashboard.PNG)
+![image](/Visualizations/Dashboard.png)
 
 ## Purpose
 
@@ -18,5 +18,5 @@ The purpose of this project is to analyze the data of Unicorn Startups and deter
 
 Writeup for this project can be found [here](https://nicholaslukas.com/Startup-Analysis)
 
-Complete process of developing this project including code, visualizations, and process explanations can be found [here](/Process Creation.MD)
+Complete process of developing this project including code, visualizations, and process explanations can be found [here](/Process Creation.md)
  

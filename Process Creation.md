@@ -44,20 +44,20 @@ Turning Data into Table: <br />
 
 ## Transforming Data
 
-Importing data for nearest major city `.../CSV Data/Major Cities Lookup.CSV`
+Importing data for nearest major city `.../CSV Data/Major Cities Lookup.CSV` <br />
 Based on US Census Data Metro/Micro Statistical Area 2021
 
 Created realtionships in data model using `City` in the `Startups` table as the primary key and `City` in the `Major Cities Lookup` table as the foreign key.
 
 ![Transform](Process Screenshots/Data Model.PNG)
 
-Added the following DAX formulas to create a new column in the primary table
-`Major City Location = RELATED('Major Cities Lookup'[Major City]) & ", " & RELATED('Major Cities Lookup'[State]) & ", " & 'Startups'[Country]`
+Added the following DAX formulas to create a new column in the primary table <br />
+`Major City Location = RELATED('Major Cities Lookup'[Major City]) & ", " & RELATED('Major Cities Lookup'[State]) & ", " & 'Startups'[Country]` <br />
 
 This provide a clean concatinated locations that allows us to look up the location on map visuals and ensure it is pulling correctly.
 
-Created a DAX formula to calculate average startup value
-`Average Startup Value = CALCULATE(DIVIDE(SUM('Startups'[Valuation]), COUNTA('Startups'[Company])))`
+Created a DAX formula to calculate average startup value <br />
+`Average Startup Value = CALCULATE(DIVIDE(SUM('Startups'[Valuation]), COUNTA('Startups'[Company])))` <br />
 This gives us an average startup value per city and an average startup value per industry.
 
 ## Visualizing Data
@@ -70,7 +70,7 @@ The center buttons act as a central way to quickly find the details of the data 
 
 Two DAX formulas were used to create calcualted measures used only on the dashboard. The reason for this is purely aesthetic and allows the visuals to show true values. This also lets the user know the scope of the values on the remainder of the report. <br />
 `Average Startup Valuation = (CALCULATE(DIVIDE(SUM('Startups'[Valuation]), COUNTA('Startups'[Company])))) * 1000000000` <br />
-`Total Startup Valuation = CALCULATE(SUM('Startups'[Valuation]) * 1000000000)` 
+`Total Startup Valuation = CALCULATE(SUM('Startups'[Valuation]) * 1000000000)` <br />
 
 ### By City
 ![Cities](Visualizations/Cities.PNG)
@@ -89,17 +89,17 @@ Similarly to the City tab, a table is used here to display easy to read numerica
 
 ### By both City and Industry
 ![Industries](Visualizations/Industry by City.PNG)
-##### Clustered Bar Chart
+#### Clustered Bar Chart
 Due to the large amount of data, a clustered bar chart was used. You can quickly find which industries are the most prevelant in which cities by looking at the size of the bar. Values are also displayed on the bottom.
-##### Matrix
+#### Matrix
 A matrix was used to show the full picture of success by city and industry. The intersections show the value/startup for each city and industry. Totals are used to show the total startup/value by city and industry as well. Any blank data means that the industry is not present in that city.
 
 ### Relationships
 ![Tooltips](Visualizations/Tooltip.PNG)
-Highlighting a city or industry on the dashboard or Industry by City page will show a pop out of their respected report (Cities or Industries) with data portaining only to the highlighted selection
+Highlighting a city or industry on the dashboard or Industry by City page will show a pop out of their respected report (Cities or Industries) with data portaining only to the highlighted selection <br />
 ![Interactions](Visualizations/Interactions.PNG)
-You can click on any of the data points and it will automatically filter the rest of the data on that tab by that point
+You can click on any of the data points and it will automatically filter the rest of the data on that tab by that point <br />
 ![Drill](Visualizations/Drill Down.PNG)
-You can drill down to company level and see which values make up the key metric
+You can drill down to company level and see which values make up the key metric <br />
 ![Interactions](Visualizations/Slicer.PNG)
-You can filter by city on the Industries tab to have an additional set of visuals for key metrics by both industry and city.
+You can filter by city on the Industries tab to have an additional set of visuals for key metrics by both industry and city. 
