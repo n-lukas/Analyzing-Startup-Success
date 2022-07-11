@@ -40,7 +40,7 @@ Turning Data into Table: <br />
 `data = {'Company': Companies, 'Valuation': Valuations, 'Date': Dates, 'Country': Countries, 'City': Cities, 'Industry': Industries}` <br />
 `Startups = pd.DataFrame(data)` <br />
 
-<img src="/Process Screenshots/Querying Data Using Python and Power BI.png"> <br />
+<img src="/Process Screenshots/Querying Data using Python and Power BI.png"> <br />
 
 ## Transforming Data
 
