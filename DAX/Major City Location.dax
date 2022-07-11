@@ -1,0 +1,1 @@
+Major City Location = RELATED('Major Cities Lookup'[Major City]) & ", " & RELATED('Major Cities Lookup'[State]) & ", " & 'Startups'[Country]

@@ -1,0 +1,1 @@
+Actual Valuation = CALCULATE(SUM('Startups'[Valuation]) * 1000000000)
