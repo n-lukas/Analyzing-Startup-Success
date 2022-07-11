@@ -1,6 +1,6 @@
 # Analyzing Startup Success
 
-![Main Photo]()
+<iframe title="Startup Analysis - Dashboard" width="1024" height="804" src="https://app.powerbi.com/view?r=eyJrIjoiNjlmZDRhMDctZjBhOS00ZTMxLWE5NDQtZDY4Nzc1MjEyNmZiIiwidCI6IjE0MmQ2ZmUxLWQyYmYtNDJmMy1iNDA4LWUzOGI1Njg4NzQyYiIsImMiOjF9" frameborder="0" allowFullScreen="true"></iframe>
 
 ## Purpose
 
@@ -16,7 +16,7 @@ The purpose of this project is to analyze the data of Unicorn Startups and deter
 
 ## Report
 
-Writeup for this project can be found [here](https://nicholaslukas.com/startup-success)
+Writeup for this project can be found [here](https://nicholaslukas.com/Startup-Analysis)
 
-Complete process of developing this project including code, visualizations, and process explanations can be found [here](Analyzing-Startup-Success/blob/master/Process Creation.md)
+Complete process of developing this project including code, visualizations, and process explanations can be found [here](https://github.com/n-lukas/Analyzing-Startup-Success/blob/main/Process%20Creation.md)
  

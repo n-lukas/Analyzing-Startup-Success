@@ -3,42 +3,42 @@
 Data was queried using Python directly into Power BI
 
 Importing Libraries:
-`import numpy as np`
-`import pandas as pd`
-`from bs4 import BeautifulSoup as bs`
-`import requests`
+`import numpy as np` <br />
+`import pandas as pd` <br />
+`from bs4 import BeautifulSoup as bs` <br />
+`import requests` <br />
 
 Getting data from website:
-`webpage_response = requests.get('https://www.cbinsights.com/research-unicorn-companies')`
-`webpage = webpage_response.content`
-`soup = bs(webpage, "html.parser")`
-`tables = soup.find_all('table')`
+`webpage_response = requests.get('https://www.cbinsights.com/research-unicorn-companies')` <br />
+`webpage = webpage_response.content` <br />
+`soup = bs(webpage, "html.parser")` <br />
+`tables = soup.find_all('table')` <br />
 
 Defining variables for data we need:
-`Companies = []`
-`Valuations = []`
-`Dates = []`
-`Countries = []`
-`Cities = []`
-`Industries = []`
+`Companies = []` <br />
+`Valuations = []` <br />
+`Dates = []` <br />
+`Countries = []` <br />
+`Cities = []` <br />
+`Industries = []` <br />
 
 Filling variables with data from website:
-`for tr in tables[0].find_all('tr'):`
-`    td = tr.find_all('td')`
-`    if not td:`
-`        continue`
-`    company, valuation, date, country, city, industry = [td.text.strip() for td in td[0:6]]`
-`    Companies.append(company)`
-`    Valuations.append(valuation)`
-`    Dates.append(date)`
-`    Countries.append(country)`
-`    Cities.append(city)`
-`    Industries.append(industry)`
+`for tr in tables[0].find_all('tr'):` <br />
+`    td = tr.find_all('td')` <br />
+`    if not td:` <br />
+`        continue` <br />
+`    company, valuation, date, country, city, industry = [td.text.strip() for td in td[0:6]]` <br />
+`    Companies.append(company)` <br />
+`    Valuations.append(valuation)` <br />
+`    Dates.append(date)` <br />
+`    Countries.append(country)` <br />
+`    Cities.append(city)` <br />
+`    Industries.append(industry)` <br />
 
 
 Turning Data into Table:
-`data = {'Company': Companies, 'Valuation': Valuations, 'Date': Dates, 'Country': Countries, 'City': Cities, 'Industry': Industries}`
-`Startups = pd.DataFrame(data)`
+`data = {'Company': Companies, 'Valuation': Valuations, 'Date': Dates, 'Country': Countries, 'City': Cities, 'Industry': Industries}` <br />
+`Startups = pd.DataFrame(data)` <br />
 
 ![Query](Analyzing-Startup-Success/blob/master/Process Screenshots/Querying Data using Python and Power BI.png)
 
@@ -69,7 +69,7 @@ The column the very left shows industries while the column to the very right sho
 The center buttons act as a central way to quickly find the details of the data you are looking for.
 
 Two DAX formulas were used to create calcualted measures used only on the dashboard. The reason for this is purely aesthetic and allows the visuals to show true values. This also lets the user know the scope of the values on the remainder of the report.
-`Actual Average Startup Value = (CALCULATE(DIVIDE(SUM('Startups'[Valuation]), COUNTA('Startups'[Company])))) * 1000000000`
+`Actual Average Startup Value = (CALCULATE(DIVIDE(SUM('Startups'[Valuation]), COUNTA('Startups'[Company])))) * 1000000000` <br />
 `Actual Valuation = CALCULATE(SUM('Startups'[Valuation]) * 1000000000)`
 
 ### By City
