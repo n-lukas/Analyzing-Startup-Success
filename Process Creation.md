@@ -95,10 +95,10 @@ Due to the large amount of data, a clustered bar chart was used. You can quickly
 A matrix was used to show the full picture of success by city and industry. The intersections show the value/startup for each city and industry. Totals are used to show the total startup/value by city and industry as well. Any blank data means that the industry is not present in that city.
 
 ### Relationships
-![Tooltips](/Visualizations/Tooltip.png)
+![Tooltips](/Visualizations/Tooltip.png =250x250) <br />
 Highlighting a city or industry on the dashboard or Industry by City page will show a pop out of their respected report (Cities or Industries) with data portaining only to the highlighted selection <br />
 You can also click on any of the data points and it will automatically filter the rest of the data on that tab by that point <br />
-![Drill](/Visualizations/Drill.png)
+![Drill](/Visualizations/Drill.png =250x250) <br />
 You can drill down to company level and see which values make up the key metric <br />
-![Interactions](/Visualizations/Slicer.png)
+![Interactions](/Visualizations/Slicer.png =250x250) <br />
 You can filter by city on the Industries tab to have an additional set of visuals for key metrics by both industry and city. 
