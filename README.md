@@ -18,5 +18,5 @@ The purpose of this project is to analyze the data of Unicorn Startups and deter
 
 Writeup for this project can be found [here](https://nicholaslukas.com/Startup-Analysis)
 
-Complete process of developing this project including code, visualizations, and process explanations can be found [here](https://github.com/n-lukas/Analyzing-Startup-Success/blob/main/Process%20Creation.md)
+Complete process of developing this project including code, visualizations, and process explanations can be found [here](https://github.com/n-lukas/Analyzing-Startup-Success/blob/main/ProcessCreation.md)
  
