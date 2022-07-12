@@ -54,7 +54,7 @@ Created realtionships in data model using `City` in the `Startups` table as the 
 Added the following DAX formulas to create a new column in the primary table <br />
 `Major City Location = RELATED('Major Cities Lookup'[Major City]) & ", " & RELATED('Major Cities Lookup'[State]) & ", " & 'Startups'[Country]` <br />
 
-This provide a clean concatinated locations that allows us to look up the location on map visuals and ensure it is pulling correctly.
+This provides a clean concatinated location that allows us to look up the location on map visuals and ensure it is pulling correctly.
 
 Created a DAX formula to calculate average startup value <br />
 `Average Startup Value = CALCULATE(DIVIDE(SUM('Startups'[Valuation]), COUNTA('Startups'[Company])))` <br />
@@ -65,17 +65,17 @@ This gives us an average startup value per city and an average startup value per
 ### Dashboard
 ![Dashboard](/Visualizations/Dashboard.png)
 The dashboard shows the high level overview of the data. On the top you have Valuation, Average Startup Value and number of startups.
-The column the very left shows industries while the column to the very right shows cities and states. You can click on any of these items and the key metrics will change in regard to what is selected.
+The column to the very left shows industries while the column to the very right shows cities and states. You can click on any of these items and the key metrics will change in regard to what is selected.
 The center buttons act as a central way to quickly find the details of the data you are looking for.
 
-Two DAX formulas were used to create calcualted measures used only on the dashboard. The reason for this is purely aesthetic and allows the visuals to show true values. This also lets the user know the scope of the values on the remainder of the report. <br />
+Two DAX formulas were used to create calcualted measures which are used only on the dashboard. The reason for this is purely aesthetic and allows the visuals to show true values. This also lets the user know the scope of the values on the remainder of the report. <br />
 `Average Startup Valuation = (CALCULATE(DIVIDE(SUM('Startups'[Valuation]), COUNTA('Startups'[Company])))) * 1000000000` <br />
 `Total Startup Valuation = CALCULATE(SUM('Startups'[Valuation]) * 1000000000)` <br />
 
 ### By City
 ![Cities](/Visualizations/Cities.png)
 #### Map
-A map was used here due to data being location based. Sicne we are dealing with major cities, you are able to quickly see which cities have the highest valuation, # of startups, and succcess. 
+A map was used here due to data being location based. Since we are dealing with major cities, you are able to quickly see which cities have the highest valuation, # of startups, and succcess. 
 The displayed metric can be changed between valuation, number of startups, and value/startup using the buttons provided. 
 #### Table
 A table was used to summarize the data in an easy to read numerical format. Using the buttons will sort the data by the selected value in descending order
@@ -96,7 +96,7 @@ A matrix was used to show the full picture of success by city and industry. The 
 
 ### Relationships
 <img src="/Visualizations/Tooltip.png" width=50% height=50%> <br />
-Highlighting a city or industry on the dashboard or Industry by City page will show a pop out of their respected report (Cities or Industries) with data portaining only to the highlighted selection <br />
+Highlighting a city or industry on the dashboard or Industry by City page will show a pop out of their respected report (Cities or Industries) with data portaining only to the highlighted selection. <br />
 You can also click on any of the data points and it will automatically filter the rest of the data on that tab by that point <br />
 <img src="/Visualizations/Drill.png" width=50% height=50%> <br />
 You can drill down to company level and see which values make up the key metric <br />
